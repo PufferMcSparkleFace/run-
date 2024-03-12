@@ -6,8 +6,7 @@ public class NPCBehavior : MonoBehaviour
 {
     public Material zombieMaterial;
     private GameObject zombie;
-    private Vector3 zombiePosition;
-    public float speed = 0;
+    public float speed = 0.001f;
 
     // Start is called before the first frame update
     void Start()
@@ -18,8 +17,7 @@ public class NPCBehavior : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        zombiePosition = new Vector3(zombie.transform.position.x, 1.25f, zombie.transform.position.z);
-        transform.position = Vector3.MoveTowards(transform.position, zombiePosition, speed);
+        transform.position = Vector3.MoveTowards(transform.position, zombie.transform.position, speed);
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -37,7 +35,7 @@ public class NPCBehavior : MonoBehaviour
     IEnumerator Transform()
     {
         yield return new WaitForSeconds(1.5f);
-        zombie = GameObject.Find("Zombie Waypoint");
+        zombie = GameObject.Find("Zombie");
 
     }
 }

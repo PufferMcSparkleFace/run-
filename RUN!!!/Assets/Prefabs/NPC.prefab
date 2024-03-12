@@ -125,4 +125,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zombieMaterial: {fileID: 2100000, guid: 4de62ed3b83ec0a42b19aa2ff6949bfc, type: 2}
-  speed: 5
+  speed: 0.2
