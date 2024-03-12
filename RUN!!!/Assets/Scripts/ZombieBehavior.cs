@@ -10,6 +10,8 @@ public class ZombieBehavior : MonoBehaviour
     public GameObject timerText;
     public Material zombieMaterial;
     public float moveSpeed = 200;
+    public float horizontal;
+    public float vertical;
     public Rigidbody rb;
 
     // Start is called before the first frame update
@@ -23,36 +25,24 @@ public class ZombieBehavior : MonoBehaviour
     {
         if (Input.GetKey("d"))
         {
-            rb.AddForce(moveSpeed * Time.deltaTime, 0, 0);
+            horizontal = 1;
         }
 
         if (Input.GetKey("a"))
         {
-            rb.AddForce(-moveSpeed * Time.deltaTime, 0, 0);
+            horizontal = -1;
         }
 
         if (Input.GetKey("w"))
         {
-            rb.AddForce(0, 0, moveSpeed * Time.deltaTime);
+            vertical = 1;
         }
 
         if (Input.GetKey("s"))
         {
-            rb.AddForce(0, 0, -moveSpeed * Time.deltaTime);
+            vertical = -1;
         }
-    }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.tag == "NPC")
-        {
-            collision.gameObject.tag = "Zombie";
-            collision.gameObject.GetComponent<MeshRenderer>().material = zombieMaterial;
-        }
-        if(collision.gameObject.tag == "Player")
-        {
-            timerText.SetActive(false);
-            gameOver.GameOver(0);
-        }
+        rb.velocity = new Vector3(horizontal * moveSpeed, 0, vertical * moveSpeed);
     }
 }

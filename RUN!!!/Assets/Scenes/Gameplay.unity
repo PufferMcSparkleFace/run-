@@ -214,6 +214,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ZombiesWin: {fileID: 899379731}
   SurvivorWins: {fileID: 446922233}
+--- !u!1 &124176247 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5607829168207080556, guid: 2996cb35739455e4cbc9388911b13a07,
+    type: 3}
+  m_PrefabInstance: {fileID: 8387392932261293965}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &124176248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124176247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 237c95ff77c9f2b4eb1c3b055f81c6a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 304830712}
+  gameOver: {fileID: 89136916}
 --- !u!1001 &127105896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3668,7 +3688,7 @@ PrefabInstance:
     - target: {fileID: 8077844199177004450, guid: bdeb85fb21060c540b4d8692dbac5e9e,
         type: 3}
       propertyPath: moveSpeed
-      value: 500
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8077844199177004450, guid: bdeb85fb21060c540b4d8692dbac5e9e,
         type: 3}
