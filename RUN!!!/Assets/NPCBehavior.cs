@@ -20,7 +20,7 @@ public class NPCBehavior : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Zombie")
+        if (collision.gameObject.tag == "Zombie" || collision.gameObject.tag == "Zombie King")
         {
             gameObject.GetComponent<MeshRenderer>().material = zombieMaterial;
             gameObject.tag = "Zombie";
