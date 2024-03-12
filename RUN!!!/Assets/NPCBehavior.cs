@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class NPCBehavior : MonoBehaviour
 {
+    public Material zombieMaterial;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +16,14 @@ public class NPCBehavior : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Zombie")
+        {
+            gameObject.GetComponent<MeshRenderer>().material = zombieMaterial;
+            gameObject.tag = "Zombie";
+        }
     }
 }

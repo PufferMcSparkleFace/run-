@@ -25,24 +25,22 @@ public class ZombieBehavior : MonoBehaviour
     {
         if (Input.GetKey("d"))
         {
-            horizontal = 1;
+            rb.AddForce(moveSpeed * Time.deltaTime, 0, 0);
         }
 
         if (Input.GetKey("a"))
         {
-            horizontal = -1;
+            rb.AddForce(-moveSpeed * Time.deltaTime, 0, 0);
         }
 
         if (Input.GetKey("w"))
         {
-            vertical = 1;
+            rb.AddForce(0, 0, moveSpeed * Time.deltaTime);
         }
 
         if (Input.GetKey("s"))
         {
-            vertical = -1;
+            rb.AddForce(0, 0, -moveSpeed * Time.deltaTime);
         }
-
-        rb.velocity = new Vector3(horizontal * moveSpeed, 0, vertical * moveSpeed);
     }
 }
