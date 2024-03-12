@@ -8,6 +8,7 @@ public class ZombieBehavior : MonoBehaviour
 
     public GameOverScreen gameOver;
     public GameObject timerText;
+    public Material zombieMaterial;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,8 @@ public class ZombieBehavior : MonoBehaviour
     {
         if(collision.gameObject.tag == "NPC")
         {
-
+            collision.gameObject.tag = "Zombie";
+            collision.gameObject.GetComponent<MeshRenderer>().material = zombieMaterial;
         }
         if(collision.gameObject.tag == "Player")
         {

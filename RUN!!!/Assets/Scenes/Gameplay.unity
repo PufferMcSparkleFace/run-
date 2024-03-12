@@ -3832,7 +3832,7 @@ PrefabInstance:
     - target: {fileID: 7216150598404163723, guid: bdeb85fb21060c540b4d8692dbac5e9e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.9
+      value: -17.82
       objectReference: {fileID: 0}
     - target: {fileID: 7216150598404163723, guid: bdeb85fb21060c540b4d8692dbac5e9e,
         type: 3}
@@ -3842,7 +3842,7 @@ PrefabInstance:
     - target: {fileID: 7216150598404163723, guid: bdeb85fb21060c540b4d8692dbac5e9e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.62299883
+      value: -3.55
       objectReference: {fileID: 0}
     - target: {fileID: 7216150598404163723, guid: bdeb85fb21060c540b4d8692dbac5e9e,
         type: 3}
@@ -3889,5 +3889,10 @@ PrefabInstance:
       propertyPath: timerText
       value: 
       objectReference: {fileID: 304830712}
+    - target: {fileID: 8077844199177004450, guid: bdeb85fb21060c540b4d8692dbac5e9e,
+        type: 3}
+      propertyPath: zombieMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 4de62ed3b83ec0a42b19aa2ff6949bfc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdeb85fb21060c540b4d8692dbac5e9e, type: 3}
