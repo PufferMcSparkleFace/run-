@@ -19,22 +19,22 @@ public class SurvivorBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("d"))
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             rb.AddForce(moveSpeed * Time.deltaTime, 0, 0);
         }
 
-        if (Input.GetKey("a"))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             rb.AddForce(-moveSpeed * Time.deltaTime, 0, 0);
         }
 
-        if (Input.GetKey("w"))
+        if (Input.GetKey(KeyCode.UpArrow))
         {
             rb.AddForce(0, 0, moveSpeed * Time.deltaTime);
         }
 
-        if (Input.GetKey("s"))
+        if (Input.GetKey(KeyCode.DownArrow))
         {
             rb.AddForce(0, 0, -moveSpeed * Time.deltaTime);
         }
@@ -42,7 +42,7 @@ public class SurvivorBehavior : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Zombie")
+        if(collision.gameObject.tag == "Zombie" || collision.gameObject.tag == "Zombie King")
         {
             timerText.SetActive(false);
             gameOver.GameOver(0);
