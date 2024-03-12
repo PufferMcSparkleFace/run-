@@ -16,9 +16,9 @@ public class NPCBehavior : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        zombiePosition = new Vector3(zombie.transform.position.x, zombie.transform.position.y, zombie.transform.position.z);
+        zombiePosition = new Vector3(zombie.transform.position.x, 1.25f, zombie.transform.position.z);
         transform.position = Vector3.MoveTowards(transform.position, zombiePosition, speed);
     }
 
@@ -37,7 +37,7 @@ public class NPCBehavior : MonoBehaviour
     IEnumerator Transform()
     {
         yield return new WaitForSeconds(1.5f);
-        zombie = GameObject.Find("Zombie");
+        zombie = GameObject.Find("Zombie Waypoint");
 
     }
 }
