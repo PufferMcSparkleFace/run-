@@ -2994,6 +2994,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1734711747}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &1784028989 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 7280930863375953282, guid: bdeb85fb21060c540b4d8692dbac5e9e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8617136746869322590}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1929360927
 GameObject:
   m_ObjectHideFlags: 0
@@ -3592,7 +3598,7 @@ PrefabInstance:
     - target: {fileID: 7216150598404163723, guid: bdeb85fb21060c540b4d8692dbac5e9e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.01
+      value: -16.87
       objectReference: {fileID: 0}
     - target: {fileID: 7216150598404163723, guid: bdeb85fb21060c540b4d8692dbac5e9e,
         type: 3}
@@ -3602,7 +3608,7 @@ PrefabInstance:
     - target: {fileID: 7216150598404163723, guid: bdeb85fb21060c540b4d8692dbac5e9e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.62299883
+      value: -0.96
       objectReference: {fileID: 0}
     - target: {fileID: 7216150598404163723, guid: bdeb85fb21060c540b4d8692dbac5e9e,
         type: 3}
@@ -3641,9 +3647,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077844199177004450, guid: bdeb85fb21060c540b4d8692dbac5e9e,
         type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 1784028989}
+    - target: {fileID: 8077844199177004450, guid: bdeb85fb21060c540b4d8692dbac5e9e,
+        type: 3}
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 89136916}
+    - target: {fileID: 8077844199177004450, guid: bdeb85fb21060c540b4d8692dbac5e9e,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 8077844199177004450, guid: bdeb85fb21060c540b4d8692dbac5e9e,
         type: 3}
       propertyPath: timerText
