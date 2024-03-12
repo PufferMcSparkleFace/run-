@@ -234,6 +234,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 304830712}
   gameOver: {fileID: 89136916}
+  rb: {fileID: 124176253}
+  moveSpeed: 4000
+--- !u!54 &124176253 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 8987304138717703953, guid: 2996cb35739455e4cbc9388911b13a07,
+    type: 3}
+  m_PrefabInstance: {fileID: 8387392932261293965}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &127105896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3629,6 +3637,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8987304138717703953, guid: 2996cb35739455e4cbc9388911b13a07,
         type: 3}
+      propertyPath: m_Drag
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8987304138717703953, guid: 2996cb35739455e4cbc9388911b13a07,
+        type: 3}
       propertyPath: m_Interpolate
       value: 1
       objectReference: {fileID: 0}
@@ -3645,6 +3658,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Zombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 6157155325171592704, guid: bdeb85fb21060c540b4d8692dbac5e9e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Zombie King
       objectReference: {fileID: 0}
     - target: {fileID: 7216150598404163723, guid: bdeb85fb21060c540b4d8692dbac5e9e,
         type: 3}

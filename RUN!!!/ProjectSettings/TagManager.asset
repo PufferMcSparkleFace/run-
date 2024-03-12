@@ -8,6 +8,7 @@ TagManager:
   - NPC
   - Undefined
   - Background
+  - Zombie King
   layers:
   - Default
   - TransparentFX
