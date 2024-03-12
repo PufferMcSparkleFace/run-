@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Zombie
   - NPC
+  - Undefined
+  - Background
   layers:
   - Default
   - TransparentFX
